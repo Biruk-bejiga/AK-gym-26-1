@@ -1,0 +1,5 @@
+- Keep all business copy and contact details in `src/content/site.ts`.
+- Prefer reusable components in `src/components/*` over duplicating markup in pages.
+- Maintain accessibility: semantic headings, descriptive link labels, focus-visible rings, and proper aria attributes.
+- Maintain SEO: update `src/app/layout.tsx` metadata and JSON-LD if business details change.
+- Avoid adding heavy client-side libraries unless needed for conversion features.

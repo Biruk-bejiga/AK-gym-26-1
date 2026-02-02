@@ -1,0 +1,33 @@
+@import "tailwindcss";
+
+:root {
+	--bg: #0b0d10;
+	--fg: #f8fafc;
+	--muted: rgba(255, 255, 255, 0.72);
+	--accent: #f4c430;
+	--accent-2: #3cffbf;
+}
+
+html {
+	color-scheme: dark;
+}
+
+body {
+	background: var(--bg);
+	color: var(--fg);
+	text-rendering: geometricPrecision;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+::selection {
+	background: rgba(244, 196, 48, 0.35);
+}
+
+a {
+	text-underline-offset: 3px;
+}
+
+.text-balance {
+	text-wrap: balance;
+}
