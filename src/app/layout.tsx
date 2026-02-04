@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Bebas_Neue, Inter } from "next/font/google";
+import { Inter } from "next/font/google";
 import "./globals.css";
 
 import { site } from "@/content/site";
@@ -11,11 +11,6 @@ const inter = Inter({
   variable: "--font-sans",
 });
 
-const bebas = Bebas_Neue({
-  subsets: ["latin"],
-  weight: "400",
-  variable: "--font-display",
-});
 
 export const metadata: Metadata = {
   metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL || "https://example.com"),
@@ -98,7 +93,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={`${inter.variable} ${bebas.variable}`}>
+    <html lang="en" className={inter.variable}>
       <body className="min-h-dvh font-[family-name:var(--font-sans)]">
         <SiteHeader />
         <main id="main" className="min-h-[70vh]">
