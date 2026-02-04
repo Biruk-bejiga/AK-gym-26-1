@@ -23,7 +23,7 @@ export function ButtonLink({
 
   const styles: Record<Variant, string> = {
     primary:
-      "bg-[var(--accent)] text-black hover:bg-[var(--accent-2)]",
+      "bg-[var(--accent)] text-white hover:bg-[var(--accent-2)] shadow-[0_12px_30px_rgba(255,45,85,0.20)]",
     secondary:
       "bg-white/10 text-white hover:bg-white/15 ring-1 ring-white/15",
     ghost: "text-white/90 hover:bg-white/10",
