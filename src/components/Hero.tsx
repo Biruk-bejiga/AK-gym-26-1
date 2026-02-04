@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 import { site } from "@/content/site";
 import { ButtonLink } from "@/components/ButtonLink";
 import { Container } from "@/components/Container";
@@ -6,9 +8,16 @@ import { LocaleText } from "@/components/LocaleText";
 export function Hero() {
   return (
     <section aria-label="Hero" className="relative overflow-hidden">
-      <div className="pointer-events-none absolute inset-0">
-        <div className="absolute -top-40 left-1/2 h-[520px] w-[900px] -translate-x-1/2 rounded-full bg-[radial-gradient(circle_at_center,rgba(244,196,48,0.18),transparent_65%)]" />
-        <div className="absolute -bottom-40 left-1/2 h-[520px] w-[900px] -translate-x-1/2 rounded-full bg-[radial-gradient(circle_at_center,rgba(60,255,191,0.10),transparent_65%)]" />
+      <div className="absolute inset-0">
+        <Image
+          src="/images/hero.svg"
+          alt=""
+          fill
+          priority
+          className="object-cover"
+        />
+        <div className="absolute inset-0 bg-gradient-to-r from-black/75 via-black/55 to-black/55" />
+        <div className="absolute inset-0 bg-black/20" />
       </div>
 
       <Container className="relative py-16 md:py-24">
@@ -19,7 +28,7 @@ export function Hero() {
               {site.location.fullAddress.en}
             </p>
 
-            <h1 className="mt-6 text-balance font-[family-name:var(--font-display)] text-5xl leading-[0.95] tracking-tight text-white md:text-7xl">
+            <h1 className="mt-6 text-balance text-5xl font-extrabold uppercase leading-[0.95] tracking-tight text-white md:text-7xl">
               <LocaleText
                 text={site.home.hero.headline}
                 className="block"
@@ -72,7 +81,7 @@ export function Hero() {
                 <p className="text-sm font-semibold text-white/70">
                   {site.brand.tagline.en}
                 </p>
-                <h2 className="mt-2 font-[family-name:var(--font-display)] text-3xl leading-[0.95] text-white">
+                <h2 className="mt-2 text-xl font-extrabold uppercase tracking-tight text-white md:text-2xl">
                   Programs built for your goal
                 </h2>
                 <ul className="mt-4 grid gap-2 text-sm text-white/70">
