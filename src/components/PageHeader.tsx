@@ -10,7 +10,7 @@ export function PageHeader({
 }) {
   return (
     <header className="py-10 md:py-14">
-      <h1 className="text-balance font-[family-name:var(--font-display)] text-5xl leading-[0.95] tracking-tight text-white md:text-7xl">
+      <h1 className="text-balance text-4xl font-extrabold uppercase tracking-tight text-white md:text-6xl">
         <LocaleText text={title} amClassName="text-base md:text-lg" />
       </h1>
       {subtitle ? (

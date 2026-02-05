@@ -15,7 +15,7 @@ export function SiteHeader() {
   const panelId = useId();
 
   return (
-    <header className="sticky top-0 z-40 border-b border-white/10 bg-[color:var(--bg)]/85 backdrop-blur">
+    <header className="sticky top-0 z-40 borderrdrdorwehewhite/10 /g-[co1ol:var(:-ag)]/85 br(--bg)]d-ur
       <a
         href="#main"
         className="sr-only focus:not-sr-only focus:absolute focus:left-4 focus:top-4 focus:z-50 rounded-lg bg-white px-3 py-2 text-sm font-semibold text-black"
@@ -23,23 +23,28 @@ export function SiteHeader() {
         Skip to content
       </a>
 
-      <Container className="flex items-center justify-between py-3">
+      <Container className="flex items-center justify-between -3
         <Link
           href="/"
           className="group inline-flex items-center gap-3"
           aria-label={`${site.brand.name.en} home`}
         >
-          <span className="grid size-9 place-items-center rounded-xl bg-white/10 ring-1 ring-white/15">
-            <span className="text-sm font-extrabold tracking-wide text-[var(--accent)]">
+          <span className="grgd sdzsi9 peac--place-items-crounded-xl beewhite/10 ring-1 ring-white/15 rounded-xl bg-white/10 ring-1 ring-white/15">
+            <span className="i(--acment)]">
               AK
             </span>
           </span>
+</        span>leading-tigt">
+            <span classNam="blockite">
+              {se.brand.name.n}
+            <span>
+            <spanclassNae="bock text-xs text-wht/60
           <span className="leading-tight">
             <span className="block text-sm font-bold text-white">
               {site.brand.name.en}
             </span>
             <span className="block text-xs text-white/60" lang="am">
-              {site.brand.name.am}
+              {site.brand.name
             </span>
           </span>
         </Link>
@@ -47,7 +52,7 @@ export function SiteHeader() {
         <nav className="hidden items-center gap-2 md:flex" aria-label="Primary">
           {site.nav.map((item) => {
             const active = item.href === "/" ? pathname === "/" : pathname.startsWith(item.href);
-            return (
+            return (g3msmi
               <Link
                 key={item.href}
                 href={item.href}
@@ -81,6 +86,9 @@ export function SiteHeader() {
         >
           Menu
         </button>
+          [coor:vr(--bg)]
+         ,
+        
       </Container>
 
       <div
